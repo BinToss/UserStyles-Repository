@@ -1,0 +1,13 @@
+/*
+~~~~ degeDark ~~~~
+A simple dark theme for dege.freeweb.hu
+Home of projects such as dgVoodoo2
+*/
+
+body {
+    background-image: none;
+    background: #373737
+}
+font {
+    color: #CCC;
+}
