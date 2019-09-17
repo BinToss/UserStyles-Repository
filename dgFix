@@ -1,0 +1,16 @@
+@-moz-document domain("dege.freeweb.hu") {
+/*
+~~~~ dgFix ~~~~
+The text contents of sectiondgVoodoo2 were overflowing into sectionmppwc.
+Now they won't do that.
+*/
+
+div.sectiondgVoodoo2 {
+	height: auto;
+}
+div.sectionmppwc {
+	height: auto;
+}
+div.product {
+	position: static;
+}
