@@ -1,0 +1,33 @@
+/* ==UserStyle==
+@name         degeFix
+@description  The text contents of `sectiondgVoodoo2` were overflowing into section `sectionmppwc`. Now, they won't do that.
+@namespace    https://github.com/BinToss/UserStyle-Repository
+@version      1.0.0
+@author       bintoss <noahrsherwin@proton.me> (https://github.com/BinToss)
+@homepageURL  https://github.com/BinToss/UserStyle-Repository
+@supportURL   https://github.com/BinToss/UserStyle-Repository/issues
+@updateURL    https://raw.githubusercontent.com/BinToss/UserStyles-Repository/refs/heads/main/src/degeFix.user.css
+@license      MIT
+@preprocessor default
+
+==/UserStyle== */
+
+@-moz-document domain("dege.freeweb.hu") {
+  /*
+~~~~ dgFix ~~~~
+The text contents of sectiondgVoodoo2 were overflowing into sectionmppwc.
+Now they won't do that.
+*/
+
+  div.sectiondgVoodoo2 {
+    height: auto;
+  }
+
+  div.sectionmppwc {
+    height: auto;
+  }
+
+  div.product {
+    position: static;
+  }
+}
