@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name         ASUS Router QoS Fix
+@description  Fixes the background's height in some ASUS routers' Quality-of-Service pages.
+@namespace    https://github.com/BinToss/UserStyles-Repository
+@version      1.0.0
+@author       bintoss <noahrsherwin@proton.me> (https://github.com/BinToss)
+@homepageURL  https://github.com/BinToss/UserStyles-Repository
+@supportURL   https://github.com/BinToss/UserStyles-Repository/issues
+@updateURL    https://raw.githubusercontent.com/BinToss/UserStyles-Repository/refs/heads/main/src/asus-router-qos-fix.user.css
+@license      MIT
+@preprocessor default
+==/UserStyle== */
+@-moz-document regexp("https?:\/\/((?:192\.168\.(?:\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])\.(?:\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5]))|(router.asus.com))\/AdaptiveQoS_Bandwidth_Monitor.asp") {
+  div.monitor_qos_bg {
+    height: auto;
+  }
+}
