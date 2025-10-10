@@ -91,6 +91,7 @@
 
   /*Header 3 in right sidebar on project pages*/
   .cf-sidebar-wrapper .cf-sidebar-header h3 {
+    /* eslint-disable-next-line css/no-important */
     color: var(--cf-color-dim) !important;
   }
 

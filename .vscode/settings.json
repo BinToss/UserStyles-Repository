@@ -5,6 +5,21 @@
     "md",
     "ts"
   ],
+  "eslint.probe": [
+    "astro",
+    "civet",
+    "css",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "mdx",
+    "vue",
+    "markdown",
+    "json",
+    "jsonc"
+  ],
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true

@@ -1,4 +1,13 @@
 {
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "build",
+    "strict": true,
+  },
+  "include": [
+    ".commitlintrc.ts",
+    "*.ts"
+  ],
   "references": [
     {
       "path": "./jsconfig.json"
