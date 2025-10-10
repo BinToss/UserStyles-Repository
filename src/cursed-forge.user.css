@@ -1,120 +1,106 @@
-@-moz-document domain("curseforge.com")
-{
-/*
-Cursed Forge by VoidsShadow (Noah Sherwin).
-A complementary userstyle to Radzo73's Dark Curseforge.
+/* ==UserStyle==
+@name         Cursed Forge
+@description  A complementary UserStyle to Radzo73's Dark CurseForge.
+@namespace    https://github.com/BinToss/UserStyle-Repository
+@version      1.0.1
+@author       bintoss <noahrsherwin@proton.me> (https://github.com/BinToss)
+@homepageURL  https://github.com/BinToss/UserStyle-Repository
+@supportURL   https://github.com/BinToss/UserStyle-Repository/issues
+@updateURL    https://raw.githubusercontent.com/BinToss/UserStyles-Repository/refs/heads/main/src/cursed-forge.user.css
+@license      MIT
+@preprocessor default
 
-Thanks, Curseforge, for using so many adjoining classes.
-Thanks, CurseForge, for using overqualifications.
+@var color cf-color-dim     "Light-ish"       #545454
+@var color cf-color-bg-dark "Dark background" #111111
+@var color cf-color-bg-dim  "Dim background"  #191919
+@var color cf-color-border  "Dim Border"      #191919
+==/UserStyle== */
 
-Pardon the poor organization. I just tacked more things on as I found them untouched by Dark CurseForge.
+@-moz-document domain("curseforge.com") {
 
-Colors Used: 
-	color: #545454, 
-	background-color: #111111, #191919
-	background: #111111, #191919
-	border-color: #191919
-*/
-/*
+  /*Previously could barely see your own username on landing page*/
+  .curseforge--nav {
+    background-color: var(--cf-color-dim);
+  }
 
-
-———————————————Intended Scope: https://www.curseforge.com/———————————————
-
-
-*/
-
-/*Previously could barely see your own username on landing page*/
- .curseforge--nav {
-    background-color: #191919;
+  /*Game List Card Titles*/
+  .card .card__body {
+    background: var(--cf-color-bg-dim);
+  }
 }
-/*Game List Card Titles*/
-.card .card__body {
-    background: #191919;
+
+@-moz-document url-prefix("https://minecraft.curseforge.com/mc-mods/") {
+
+  /*Left SideBar — Mod Categories*/
+  .body-project-listing section.level-categories,
+  .body-publicproject-listing section.level-categories {
+    border-style: solid;
+    border-color: var(--cf-color-bg-dark);
+    background: var(--cf-color-bg-dark);
+  }
+
+  /*Project Titles in project list*/
+  .project-list-item .details .info.name a {
+    color: var(--cf-color-dim);
+  }
 }
-/*
 
+@-moz-document url-prefix("https://minecraft.curseforge.com/members/") {
 
-———————————————Intended Scope: https://minecraft.curseforge.com/mc-mods/———————————————
+  /*User Profile — Curseforge...What are you doing?*/
+  .p-user-a .p-user-interaction .p-user-content,
+  .p-user-a.s_myAccount .p-user-interaction .p-user-content,
+  .p-user-a.s_myProfile .p-user-interaction .p-user-content,
+  .p-user-a.s_myStreams .p-user-interaction .p-user-content,
+  .p-user-a.s_newContent .p-user-interaction .p-user-content {
+    background-color: var(--cf-color-bg-dark);
+    border-color: var(--cf-color-border);
+  }
 
-
-*/
-
-/*Left SideBar — Mod Categories*/
- .body-project-listing section.level-categories, .body-publicproject-listing section.level-categories {
-    border: solid #111111;
-    background: #111111
-}
-/*Project Titles in project list*/
- .project-list-item .details .info.name a {
-    color: #545454;
-}
-/*
-
-
-———————————————Intended Scope: https://minecraft.curseforge.com/members/member-name———————————————
-
-
-*/
-
-/*User Profile — Curseforge...What are you doing?*/
- .p-user-a .p-user-interaction .p-user-content, .p-user-a.s_myAccount .p-user-interaction .p-user-content, .p-user-a.s_myProfile .p-user-interaction .p-user-content, .p-user-a.s_myStreams .p-user-interaction .p-user-content, .p-user-a.s_newContent .p-user-interaction .p-user-content {
-    background-color: #111111;
-    border-color: #111111;
-}
-/*Profile Picture Shadow*/
- .avatar a:before {
+  /*Profile Picture Shadow*/
+  .avatar a:before {
     box-shadow: rgba(0, 0, 0, 0.35) 0 2px 4px inset, rgba(0, 0, 0, 0.15) 0 1px 0;
     /*Original: rgba(0, 0, 0, 0.35) 0 2px 4px inset, rgba(255, 255, 255, 0.15)*/
+  }
+
+  /*User Profile MEMBER INTERACTION Nav Bar*/
+  body.body-user.responsive-enabled .p-user-interaction .profile-nav-container nav,
+  body.body-user.responsive-disabled .p-user-interaction .profile-nav-container nav {
+    border-color: var(--cf-color-border);
+    background: var(--cf-color-bg-dim);
+  }
 }
-/*User Profile MEMBER INTERACTION Nav Bar*/
- body.body-user.responsive-enabled .p-user-interaction .profile-nav-container nav, body.body-user.responsive-disabled .p-user-interaction .profile-nav-container nav {
-    border-color: #191919;
-    background: #191919;
+
+@-moz-document url-prefix("https://minecraft.curseforge.com/search?search=") {
+
+  /*Search Results - No Results*/
+  #site .alert {
+    background-color: var(--cf-color-bg-dim);
+    background: var(--cf-color-bg-dim) none;
+    color: var(--cf-color-dim)
+  }
 }
-/*
 
+@-moz-document url-prefix("https://minecraft.curseforge.com/projects/") {
 
-———————————————Intended Scope: https://minecraft.curseforge.com/search?search=———————————————
-
-
-*/
-
-/*Search Results - No Results*/
- #site .alert {
-    background-color: #191919;
-    background: #191919 none;
-    color: #545454
-}
-/*
-
-
-———————————————Intended Scope: https://minecraft.curseforge.com/projects/project-name———————————————
-
-
-*/
-
-/*Stickied-Fixed-Position Project Title*/
- body.body-project-details .project-details-header.fixed {
+  /*Stickied-Fixed-Position Project Title*/
+  body.body-project-details .project-details-header.fixed {
     background: #111111;
     border-bottom: 1px solid #111111;
-}
-/*Header 3 in right sidebar on project pages*/
- .cf-sidebar-wrapper .cf-sidebar-header h3 {
-    color: #545454!important;
-}
-/*Project details in right sidebar on project pages*/
- .cf-sidebar-wrapper .cf-details.project-details li .info-label {
-    color: #545454;
-}
-/*Project details in right sidebar on project pages*/
- .cf-sidebar-wrapper .cf-details.project-details li .info-data {
-    color: #545454;
-}
-/*
+  }
 
+  /*Header 3 in right sidebar on project pages*/
+  .cf-sidebar-wrapper .cf-sidebar-header h3 {
+    color: var(--cf-color-dim) !important;
+  }
 
-———————————————Extras/Orphaned Attributes———————————————
+  /*Project details in right sidebar on project pages*/
+  .cf-sidebar-wrapper .cf-details.project-details li .info-label {
+    color: var(--cf-color-dim);
+  }
 
-
-*/
+  /*Project details in right sidebar on project pages*/
+  .cf-sidebar-wrapper .cf-details.project-details li .info-data {
+    color: var(--cf-color-dim);
+  }
 }
