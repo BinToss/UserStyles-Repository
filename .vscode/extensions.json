@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "arcanis.vscode-zipfs",
+    "dbaeumer.vscode-eslint",
+    "chriskirknielsen.visubezier",
+    "phoenisx.cssvar",
+    "neotan.vscode-auto-restart-typescript-eslint-servers",
+    "yoavbls.pretty-ts-errors",
+    "mattpocock.ts-error-translator",
+    "ms-vscode.vscode-typescript-next",
+    "mutsuntsai.jsdoc-link",
+    "kricsleo.vscode-package-json-inspector",
+    "ms-vscode.ts-file-path-support",
+    "aaron-bond.better-comments",
+    "aliariff.auto-add-brackets",
+    "johnsoncodehk.vscode-tsconfig-helper"
+  ]
+}

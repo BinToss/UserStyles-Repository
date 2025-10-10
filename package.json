@@ -1,0 +1,11 @@
+{
+  "name": "userstyles-repository",
+  "packageManager": "yarn@4.9.2",
+  "private": true,
+  "devDependencies": {
+    "@eslint/css": "^0.12.0",
+    "@eslint/markdown": "^7.4.0",
+    "eslint": "^9.37.0",
+    "typescript": "^5.9.3"
+  }
+}
