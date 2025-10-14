@@ -29,6 +29,7 @@ export default defineConfig([
       parserOptions: { projectService: true } as TSESLint.ParserOptions,
     },
     rules: { 'unicorn/expiring-todo-comments': 'off' },
+    ignores: ['.pnp.cjs', '.pnp.loader.mjs'],
   },
   {
     files: ['**/*.json'], plugins: { json }, language: 'json/json', extends: [json.configs.recommended],
