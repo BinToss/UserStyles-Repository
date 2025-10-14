@@ -1,16 +1,16 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
     "composite": true,
     "outDir": "build",
     "strict": true,
+    "esModuleInterop": false,
+    "target": "es2024",
+    "module": "nodenext"
   },
   "include": [
     ".commitlintrc.ts",
+    "eslint.config.mts",
     "*.ts"
-  ],
-  "references": [
-    {
-      "path": "./jsconfig.json"
-    }
   ]
 }

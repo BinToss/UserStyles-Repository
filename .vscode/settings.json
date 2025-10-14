@@ -1,25 +1,23 @@
 {
   "eslint.validate": [
     "css",
-    "js",
-    "md",
-    "ts"
+    "javascript",
+    "json",
+    "json5",
+    "jsonc",
+    "markdown",
+    "typescript"
   ],
   "eslint.probe": [
-    "astro",
-    "civet",
     "css",
     "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "html",
-    "mdx",
-    "vue",
-    "markdown",
     "json",
-    "jsonc"
+    "json5",
+    "jsonc",
+    "markdown",
+    "typescript"
   ],
+  "eslint.format.enable": true,
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true
