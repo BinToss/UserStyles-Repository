@@ -1,9 +1,14 @@
 /* ==UserStyle==
 @name           Black-On-White gitignore.pro validator
 @namespace      github.com/BinToss/UserStyles-Repository
-@version        1.0.0
+@version        1.0.1
 @description    Changes white text on a white background to black text on a white background. Only applies to gitignore.pro/tools/validator.
 @author         bintoss <noahrsherwin at gmail dot com> (https://github.com/BinToss)
+@homepageURL  https://github.com/BinToss/UserStyles-Repository
+@supportURL   https://github.com/BinToss/UserStyles-Repository/issues
+@updateURL    https://github.com/BinToss/UserStyles-Repository/src/gitignore.pro_tools_validator_blackOnWhite.user.css
+@license      MIT
+
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://gitignore.pro/tools/validator") {
