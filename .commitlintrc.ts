@@ -14,6 +14,7 @@ const config: UserConfig = {
         'degeFix',
         'deps-dev',
         'deps',
+        'gitignoreProBoW'
       ],
     ],
   },
